@@ -8,7 +8,7 @@
 
 作业要求：使用文本编辑器，用html设计一个网页，页面包含输入框和按钮，实现某个搜索引擎的搜索功能，可以直接用html实现，用bootstrap实现美观版式更好。
 
-[作业2链接](https://jeff0115.github.io/hw2/t2/search.html)
+[作业2链接](https://jeff0115.github.io/hw2/t2/Search.html)
 
 # 计算机科学与编程入门第一次作业
 
