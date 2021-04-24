@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>Let's search!</title>
+</head>
+
+<style>
+  .all {
+    margin-top: 15%;
+    margin-left: 18%;
+    margin-right: 20%;
+    width: 60%;
+    height: 40%;
+  }
+
+  .textfield {
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    width: 80%;
+  }
+
+  .box {
+    float: left;
+    margin-left: 2%;
+    width: 22.5%;
+    height: 150px;
+  }
+
+  .button {
+    float: left;
+    margin-left: 20%;
+    width: 60%;
+  }
+
+  .img {
+    float: left;
+    margin-left: 20%;
+    width: 60%;
+    height: auto;
+  }
+</style>
+
+<body>
+  <!--因为form中action的地址只能设置一个，故弃用-->
+  <div class="all">
+    <h1 style="text-align:center;margin-bottom:3%;font-size:70px;">Let's search!</h1>
+    <div class="textfield"><input type="text" id="word" value="" style="width:100%"></div>
+    <div style="margin-left:10%;margin-right:10%;">
+      <div class="box">
+        <div class="button"><button id="baidubt" class="btn btn-primary" onclick="baidu()"
+            style="width:100%;">百度搜索</button></div>
+        <img src="C:\Users\56206\Desktop\college\大三下\python\06_第六讲_网页设计\website\img\baidu.jpg" class="img">
+      </div>
+      <div class="box">
+        <div class="button"><button id="bingbt" class="btn btn-primary" onclick="bing()"
+            style="width:100%;">必应搜索</button></div>
+        <img src="C:\Users\56206\Desktop\college\大三下\python\06_第六讲_网页设计\website\img\bing.jpg" class="img">
+      </div>
+      <div class="box">
+        <div class="button"><button id="googlebt" class="btn btn-primary" onclick="google()"
+            style="width:100%;">谷歌搜索</button></div>
+        <img src="C:\Users\56206\Desktop\college\大三下\python\06_第六讲_网页设计\website\img\google.jpg" class="img">
+      </div>
+      <div class="box">
+        <div class="button"><button id="sougoubt" class="btn btn-primary" onclick="sougou()"
+            style="width:100%;">搜狗搜索</button></div>
+        <img src="C:\Users\56206\Desktop\college\大三下\python\06_第六讲_网页设计\website\img\sougou.jpg" class="img">
+      </div>
+    </div>
+  </div>
+
+  <script>function baidu() { console.log(document.getElementById("word")); window.open("http://www.baidu.com/s?wd=" + document.getElementById("word").value) }</script>
+  <script>function bing() { console.log(document.getElementById("word")); window.open("https://cn.bing.com/search?q=" + document.getElementById("word").value) }</script>
+  <script>function google() { console.log(document.getElementById("word")); window.open("https://www.google.com/search?q=" + document.getElementById("word").value) }</script>
+  <script>function sougou() { console.log(document.getElementById("word")); window.open("https://www.sogou.com/web?query=" + document.getElementById("word").value) }</script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-LCPyFKQyML7mqtS+4XytolfqyqSlcbB3bvDuH9vX2sdQMxRonb/M3b9EmhCNNNrV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
