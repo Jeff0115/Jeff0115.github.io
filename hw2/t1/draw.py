@@ -82,7 +82,7 @@ c = Graph(init_opts=opts.InitOpts(page_title='关系图-仿生人会梦见电子
 c.add("", 
       node_in_graph, 
       link_in_graph, 
-      edge_length=[100,400], 
+      edge_length=[10,400], 
       repulsion=100,
       categories=categories, 
       is_draggable = True,
